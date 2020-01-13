@@ -1402,7 +1402,7 @@ public abstract class BaseXMLBuilder {
      * within this builder's document, to assist in running namespace-aware
      * XPath queries against the document.
      */
-    protected NamespaceContextImpl buildDocumentNamespaceContext() {
+    public NamespaceContextImpl buildDocumentNamespaceContext() {
         return new NamespaceContextImpl(xmlDocument.getDocumentElement());
     }
 
