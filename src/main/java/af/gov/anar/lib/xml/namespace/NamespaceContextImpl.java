@@ -1,4 +1,4 @@
-package af.gov.anar.lib.xml;
+package af.gov.anar.lib.xml.namespace;
 
 import java.util.Collections;
 import java.util.HashMap;

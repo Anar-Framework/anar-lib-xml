@@ -1,4 +1,4 @@
-package af.gov.anar.lib.xml;
+package af.gov.anar.lib.xml.builder;
 
 import java.io.IOException;
 import java.io.StringWriter;
@@ -23,6 +23,7 @@ import javax.xml.xpath.XPathExpression;
 import javax.xml.xpath.XPathExpressionException;
 import javax.xml.xpath.XPathFactory;
 
+import af.gov.anar.lib.xml.namespace.NamespaceContextImpl;
 import af.gov.anar.lib.xml.exception.XMLBuilderRuntimeException;
 import net.iharder.Base64;
 
