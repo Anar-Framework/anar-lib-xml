@@ -7,7 +7,7 @@ import af.gov.anar.lib.xml.exception.XMLBuilderRuntimeException;
 import javax.xml.xpath.XPathConstants;
 import javax.xml.xpath.XPathExpressionException;
 
-public class TestXMLBuilder2 extends BaseXMLBuilderTests {
+public class XMLBuilderTest2 extends BaseXMLBuilderTests {
 
     @Override
     public Class<? extends BaseXMLBuilder> XMLBuilderToTest() throws Exception {

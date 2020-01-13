@@ -3,7 +3,7 @@ package af.gov.anar.lib.xml;
 import af.gov.anar.lib.xml.builder.BaseXMLBuilder;
 import af.gov.anar.lib.xml.builder.XMLBuilder;
 
-public class TestXMLBuilder extends BaseXMLBuilderTests {
+public class XMLBuilderTest extends BaseXMLBuilderTests {
 
     @Override
     public Class<? extends BaseXMLBuilder> XMLBuilderToTest() throws Exception {

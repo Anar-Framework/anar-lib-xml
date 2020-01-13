@@ -6,7 +6,6 @@ import java.io.StringReader;
 import java.io.StringWriter;
 import java.util.Properties;
 
-import javax.annotation.Resource;
 import javax.xml.transform.OutputKeys;
 import javax.xml.xpath.XPathConstants;
 import javax.xml.xpath.XPathExpressionException;
@@ -495,7 +494,7 @@ public abstract class BaseXMLBuilderTests extends TestCase {
                     .xpathFind("/NamespaceUnwareTest/NestedElement");
         } catch (Exception ex) {
             Throwable cause = null;
-            if (this instanceof TestXMLBuilder2) {
+            if (this instanceof XMLBuilderTest2) {
                 cause = ex.getCause();  // Exception wrapped in runtime ex
             } else {
                 cause = ex;
@@ -677,7 +676,7 @@ public abstract class BaseXMLBuilderTests extends TestCase {
      * @throws Exception
      */
     public void testXMLBuilderParserImmuneToXXEAttackByDefault() throws Exception {
-        String externalFilePath = "src/test/java/af/gov/anar/lib/xml/external.txt";
+        String externalFilePath = "src/test/java/af/gov/anar/lib/xml/date.txt";
         File externalFile = new File(externalFilePath);
         String XML_DOC_WITH_XXE =
                 "<?xml version=\"1.0\"?>" +
